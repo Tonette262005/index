@@ -1,5 +1,5 @@
 <?php
-
+// index.php
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -32,7 +32,8 @@
         <p>&copy; <?php echo date("Y"); ?> FOOTWAREHUB. All rights reserved.</p>
     </footer>
 
-
+    <!-- Modals -->
+    <!-- User Login Modal -->
     <div id="user-login-modal" class="modal" role="dialog" aria-labelledby="user-login-title">
         <div class="modal-content">
             <span class="close" data-modal="user-login-modal">&times;</span>
@@ -50,7 +51,7 @@
         </div>
     </div>
 
-
+    <!-- User Registration Modal -->
     <div id="user-registration-modal" class="modal" role="dialog" aria-labelledby="user-registration-title">
         <div class="modal-content">
             <span class="close" data-modal="user-registration-modal">&times;</span>
@@ -70,7 +71,7 @@
         </div>
     </div>
 
- 
+    <!-- Admin Login Modal -->
     <div id="admin-login-modal" class="modal" role="dialog" aria-labelledby="admin-login-title">
         <div class="modal-content">
             <span class="close" data-modal="admin-login-modal">&times;</span>
@@ -89,7 +90,7 @@
     </div>
 
     <script>
-
+        // Modal functionality
         document.querySelectorAll('.close').forEach(closeButton => {
             closeButton.addEventListener('click', () => {
                 const modalId = closeButton.getAttribute('data-modal');
@@ -105,7 +106,7 @@
             });
         });
 
-
+        // Password toggle functionality
         document.querySelectorAll('.toggle-password').forEach(toggle => {
             toggle.addEventListener('click', () => {
                 const targetId = toggle.getAttribute('data-target');
